@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login - Spotify</title>
+    <link
+      rel="shortcut icon"
+      href="/Images/SpotifySiteFavicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="/Images/SpotifySiteFavicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Layout.css" />
+    <link rel="stylesheet" href="../fonts.css" />
+    <link rel="stylesheet" href="./Login.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="root">
+        <div class="navBar">
+          <div class="navBarLogo">
+            <a class="inner" href="" onclick="location.reload()">
+              <div class="col1"><i class="bx bxl-spotify"></i></div>
+              <div class="col2">Spotify <span>©</span></div>
+            </a>
+          </div>
+        </div>
+        <div class="login loginBackground">
+          <div class="loginInner">
+            <div class="loginFrame">
+              <h1 class="loginTitle">Log in to Spotify</h1>
+              <ul class="loginSocials">
+                <li class="loginSocialsInner">
+                  <button class="socialsFrame">
+                    <span class="socialsIcon"
+                      ><img
+                        class="socialImg"
+                        src="/Images/google.1024x1024.png"
+                        alt="Google"
+                      />
+                    </span>
+                    <span class="socialsDescription">Continue with Google</span>
+                  </button>
+                </li>
+                <li class="loginSocialsInner">
+                  <button class="socialsFrame">
+                    <span class="socialsIcon"
+                      ><img
+                        class="socialImg"
+                        src="/Images/facebook.1024x1024.png"
+                        alt="Google"
+                      />
+                    </span>
+                    <span class="socialsDescription"
+                      >Continue with Facebook</span
+                    >
+                  </button>
+                </li>
+                <li class="loginSocialsInner">
+                  <button class="socialsFrame">
+                    <span class="socialsIcon"
+                      ><img
+                        class="socialImg"
+                        src="/Images/apple.831x1024.png"
+                        alt="Google"
+                      />
+                    </span>
+                    <span class="socialsDescription">Continue with Apple</span>
+                  </button>
+                </li>
+              </ul>
+              <hr class="loginSpacing" />
+              <div class="loginMain">
+                <div class="mainGroup1">
+                  <div class="securityLabel">
+                    <label>
+                      <span>Email or username</span>
+                    </label>
+                  </div>
+                  <input
+                    type="text"
+                    class="securityForm"
+                    id="emailOrUsernameInput"
+                    placeholder="Email or username"
+                    aria-describedby="passwordError"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    onchange="eMailWarningToggle()"
+                  />
+                </div>
+                <div class="mainGroup2">
+                  <div class="securityLabel">
+                    <label>
+                      <span>Password</span>
+                    </label>
+                  </div>
+                  <div class="securityOuter">
+                    <input
+                      type="password"
+                      class="securityForm"
+                      id="passwordInput"
+                      placeholder="Password"
+                      aria-describedby="passwordError"
+                      autocomplete="current-password"
+                      autocorrect="off"
+                      autocapitalize="off"
+                      onchange="passwordWarningToggle()"
+                    />
+                    <!--
+                    <div class="securityWarning">
+                      <div class="warningIconBg">
+                        <span class="icon">!</span>
+                      </div>
+                      <div class="warningDescription">
+                        Please enter your password.
+                      </div>
+                    </div>
+                    -->
+                    <div class="securityHide">
+                      <button
+                        class="securityHideInner"
+                        onclick="togglePassword()"
+                      >
+                        <span>
+                          <i class="bx bx-low-vision"></i>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <!--<div class="passwordError"></div>-->
+                </div>
+                <div class="mainGroup3">
+                  <div class="rememberMe">
+                    <label>
+                      <input
+                        type="checkbox"
+                        name="login"
+                        class="loginRemember"
+                      />
+                      <span class="rememberWrapper">
+                        <span class="rememberIndicator"></span>
+                      </span>
+                      <span class="rememberLabel">
+                        <p>Remember me</p>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+                <div class="mainGroup4">
+                  <button class="loginButton">
+                    <span class="buttonInner">
+                      <span class="buttonContent">Log In</span>
+                    </span>
+                  </button>
+                </div>
+                <div class="mainGroup5">
+                  <a class="forgotPassword" href="#">
+                    <p>Forgot your password?</p>
+                  </a>
+                </div>
+              </div>
+              <hr class="loginSpacing" />
+              <div class="loginSignUp">
+                <div class="inner">
+                  <div class="col1">Don't have an account?</div>
+                  <a class="col2" href="#">Sign up for Spotify</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer">
+          <div class="copyRight">
+            <div class="inner">
+              This site is protected by reCAPTCHA and the Google
+              <a href="https://policies.google.com/privacy">Privacy Policy,</a>
+              and
+              <a href="https://policies.google.com/terms">Terms of Service</a>
+              apply.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/Page/Login/Login.js"></script>
+</html>

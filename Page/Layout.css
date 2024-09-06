@@ -1,0 +1,44 @@
+*::before,
+*::after,
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-base: #121212;
+  --background-highlight: #1a1a1a;
+  --background-lowest: #000;
+  --background-elevated-base: #242424;
+  --background-elevated-highlight: #2a2a2a;
+  --essential-subdued: #727272;
+  --essential-negative: #e91429;
+  --essential-highlight: #ffffff;
+  --text-base: #ffffff;
+  --text-subdued: #a7a7a7;
+  --text-bright: #1ed760;
+  --text-pressed: #169c46;
+  --text-negative: #f15e6c;
+
+  --background-bright: #1ed760;
+  --background-pressed: #169c46;
+
+  --border-radius-base: 8px;
+  --border-radius-special: 500px;
+  --border-radius-50: 50%;
+  --spacer-1: 24px;
+  --spacer-2: 8px;
+
+  --border-radius-md: 4px;
+  --control-size-md: 48px;
+}
+
+.main {
+  height: 100dvh;
+}
+.root {
+  background-color: var(--background-base);
+  color: var(--text-base);
+}
